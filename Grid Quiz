@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Quiz</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous"> <script src="https://kit.fontawesome.com/4ccffd188f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        .gridOne {
+            display: grid;
+            grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+            grid-template-columns: 1fr 1fr;
+            background-color: gainsboro;
+            font-size: 1.5em;
+            text-align: center;
+        }
+
+        .gridOne :nth-child(2){
+            color: blue;
+        }
+
+        .gridTwo {
+            display: grid;
+            height: 20px;
+            grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+            grid-template-columns: 1fr 1fr 2fr;
+        }
+
+        .gridTwo p {
+            text-align: center;
+            font-size: 1.5em;
+        }
+
+        .childOne {
+            background-color: red;
+        }
+
+        .childTwo {
+            background-color: blue;
+        }
+
+        .childThree {
+            background-color: yellow;
+        }
+
+        .spacer {
+            height: 100px;
+            padding-top: 50px;
+            background-color: white;
+        }
+
+        .gridThree {
+            display: grid;
+            width: 500px;
+            height: 300px;
+            padding-top: 10px;
+            background-color: rgb(191, 177, 177);
+            grid-template-rows: 1fr 3fr;
+        }
+
+        .gridThree p {
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: 600;
+        }
+
+        .gridThree img {
+            width: 500px;
+            height: 225px;
+            object-fit: cover;
+        }
+
+        .gridFour {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            width: 500px;
+            color: white;
+            background-color: rgb(21, 110, 21);
+            font-size: 1em;
+            font-weight: 600;
+        }
+
+        .gridFour #oneTwo {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .gridFour p {
+            padding-left: 10px;
+        }
+
+        .happyGrid {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            width: 500px;
+            color: white;
+            background-color:thistle;
+            font-size: 1em;
+            font-weight: 600;
+        }
+
+        .happyGrid p {
+            text-align: center;
+            font-size: 1.5em;
+        }
+
+        .gridFive {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+        }
+
+        .gridFive img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            padding: 15px;
+        }
+
+        .gridSix {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            width: 500px;
+            background-color: lightgray;
+        }
+    
+        .gridSix p {
+            font-size: 1.75em;
+            font-family: 'Bebas Neue';
+            text-align: center;
+            padding-top: 20px;
+        }
+        
+        .gridSix i {
+            font-size: 3em;
+            padding: 40px;
+        }
+
+       
+    </style>
+</head>
+<body>
+
+    <div class="gridOne">
+        <p>Hello World</p>
+        <p>My Fantastic Content</p>
+    </div>
+
+    <div class="spacer"></div>
+
+    <div class="gridTwo">
+        <div class="childOne">
+            <p>Lorem ipsum dolor, sit amet.</p>
+        </div>
+
+        <div class="childTwo">
+            <p>Lorem ipsum dolor, sit amet.</p>
+        </div>
+
+        <div class="childThree">
+            <p>Lorem ipsum dolor, sit amet.</p>
+        </div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <div class="gridThree">
+        <div class="mySon">
+            <p>Beautiful Waterfall</p>
+        </div>
+
+        <div class="myDaughter">
+            <img src="images/trac-vu-_fjN54vX6oU-unsplash.jpg" alt="Image">
+        </div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <div class="gridFour">
+        <div class="happyChild">
+            <p>The happy child plays.</p>
+        </div>
+
+        <div id="oneTwo">
+            <p>One piece of candy for child one.</p>
+            <p>Two pieces of candy for child two.</p>
+        </div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <div class="happyGrid">
+        <div class="smilingChild">
+            <p>Beautiful Nature</p>
+        </div>
+
+        <div class="gridFive">
+            <img src="images/clement-fusil-Fpqx6GGXfXs-unsplash.jpg" alt="Image">
+            <img src="images/johann-siemens-EPy0gBJzzZU-unsplash.jpg" alt="Image">
+        </div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <div class="gridSix">
+        <i class="fa-brands fa-amazon"></i>
+        <p>I'm an Amazonian</p>
+    </div>
+    
+</body>
+</html>
